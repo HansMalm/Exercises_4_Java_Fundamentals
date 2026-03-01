@@ -39,5 +39,12 @@ public class Main {
         int num1 = 23, num2 = 11,  num3 = 77;
         int average = (num1 + num2 + num3) / 3;
         System.out.println("\n(" + num1 + " + " + num2 + " + " + num3 + ")/3 = " + average);
+
+        //Exercise 5: Create a program that asks the user to input their name and store it in a variable.
+        // Then print "Hello username" with the name that was input.
+        String userName;
+        System.out.print("\nInput your username: ");
+        userName = scanner.next();
+        System.out.println("Hello " + userName);
     }
 }
