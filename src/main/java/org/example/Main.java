@@ -1,8 +1,6 @@
 package org.example;
 
-import javax.xml.transform.Source;
 import java.util.Scanner;
-import java.util.SortedMap;
 
 public class Main {
     static void main() {
