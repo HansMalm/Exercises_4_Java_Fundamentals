@@ -34,5 +34,10 @@ public class Main {
         System.out.println(div1 + " / " + div2 + " = " + divResult);
         int sub1 = 55; int sub2 = 12; int subResult = sub1 - sub2;
         System.out.println(sub1 + " - " + sub2 + " = " + subResult);
+
+        //Exercise 4: Print the average of the numbers 23,11 and 77.
+        int num1 = 23, num2 = 11,  num3 = 77;
+        int average = (num1 + num2 + num3) / 3;
+        System.out.println("\n(" + num1 + " + " + num2 + " + " + num3 + ")/3 = " + average);
     }
 }
