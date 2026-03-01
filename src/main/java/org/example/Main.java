@@ -2,6 +2,8 @@ package org.example;
 
 import java.util.Scanner;
 
+import java.util.Random;
+
 public class Main {
     static void main() {
 
@@ -69,7 +71,30 @@ public class Main {
         hours = inputSeconds / 60 / 60;
         minutes = inputSeconds % 60;
         seconds = minutes % 60;
-        System.out.println("\n" + hours + ":" + minutes + ":" + seconds);
+        System.out.println("\n" + inputSeconds + " seconds equals: " + hours + ":" + minutes + ":" + seconds);
 
+        //Exercise 8: Write a program that generates and stores a random number between 1 and 500.
+        //Then let the user guess the number. If the user types the correct number they should see
+        // a message including number of guesses made. If a guess is greater or smaller than the random
+        // number, display "Your guess was too small" or "Your guess was too big". The program should run
+        // until the user guess the correct number.
+        Random random = new Random();
+        int randomNumber = random.nextInt(500) + 1; int numberOfGuess = 0; int guess;
+        System.out.println("\nWelcome to the number guess game!");
+        System.out.println("The number is between 1 and 500.");
+        
+        while (true) {
+            numberOfGuess++;
+            System.out.print("Input a guess: ");
+            guess = scanner.nextInt();
+            if (guess < randomNumber) {
+                System.out.println("Your guess was too small.");
+            } else if (guess > randomNumber) {
+                System.out.println("Your guess was too big.");
+            } else {
+                break;
+            }
+        }
+        System.out.println("The number is " + randomNumber + " and you guessed " + numberOfGuess + " times!");
     }
 }
