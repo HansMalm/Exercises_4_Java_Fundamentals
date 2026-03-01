@@ -1,6 +1,8 @@
 package org.example;
 
+import javax.xml.transform.Source;
 import java.util.Scanner;
+import java.util.SortedMap;
 
 public class Main {
     static void main() {
@@ -46,5 +48,22 @@ public class Main {
         System.out.print("\nInput your username: ");
         userName = scanner.next();
         System.out.println("Hello " + userName);
+
+        //Exercise 6: Create a program that asks user to input two numbers and print the
+        // sum,multiplication, division and subtraction of those numbers.
+        int numbers1, numbers2, result;
+        System.out.println("\nInput two numbers to calculate.");
+        System.out.print("Input first number: ");
+        numbers1 = scanner.nextInt();
+        System.out.print("Input second number: ");
+        numbers2 = scanner.nextInt();
+        result = numbers1 + numbers2;
+        System.out.println(numbers1 + " + " + numbers2 + " = " + result );
+        result = numbers1 * numbers2;
+        System.out.println(numbers1 + " * " + numbers2 + " = " + result);
+        result = numbers1 / numbers2;
+        System.out.println(numbers1 + " / " + numbers2 + " = " + result);
+        result = numbers1 - numbers2;
+        System.out.println(numbers1 + " - " + numbers2 + " = " + result);
     }
 }
