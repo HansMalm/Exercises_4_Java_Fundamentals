@@ -63,5 +63,13 @@ public class Main {
         System.out.println(numbers1 + " / " + numbers2 + " = " + result);
         result = numbers1 - numbers2;
         System.out.println(numbers1 + " - " + numbers2 + " = " + result);
+
+        //Exercise 7: Create a program that converts seconds to hours,minutes and seconds.
+        int inputSeconds = 86399; int hours, minutes, seconds;
+        hours = inputSeconds / 60 / 60;
+        minutes = inputSeconds % 60;
+        seconds = minutes % 60;
+        System.out.println("\n" + hours + ":" + minutes + ":" + seconds);
+
     }
 }
